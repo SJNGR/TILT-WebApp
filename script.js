@@ -5,7 +5,7 @@ function LaunchApp() {
     window.location.href="public/TiltThisText.html";
   } 
 
-
-function MoreInfo() {
-    
+function PageMoreInfo() {
+    // Redirect to a different page
+    window.location.href="public/MoreInfo.html";
 }
