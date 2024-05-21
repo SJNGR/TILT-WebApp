@@ -1,3 +1,6 @@
+
+
+
 .container {
     width: 80%;
     margin: 50px auto;
@@ -10,16 +13,17 @@ textarea {
     width: 100%;
     height: 150px;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #84c0ff;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #b900c0;
 }
