@@ -1,6 +1,9 @@
 function LaunchApp() {
-    alert("Get ready to Tilt back the balance!");
-}
+    // Launch alert message
+    alert("Get ready to tilt the balance!");
+        // Redirect to a different page
+    window.location.href="public/TiltThisText.html";
+  } 
 
 
 function MoreInfo() {
