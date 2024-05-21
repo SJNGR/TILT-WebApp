@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TILT</title>
     <script src="script.js"></script>
+    <script>
+        function redirectToPage() {
+          // Launch alert message
+          alert("You clicked the button!");
+          
+          // Redirect to a different page
+          window.location.href="public/TiltThisText.html";
+        }
+        </script>
 </head>
 <body>
     <h1>Tilt the Scale - Back to Balance </h1>
     <h4>Blurb of problem and AI solution</h4>
 <p>Longer description of the problem and this particular AI solution</p>
 
-<//Javascript button for "Launch the App": bring to page for article link and overlay>
+<// button for "Launch the App": bring to page for article link and overlay>
 <div>
-    <button onclick="LaunchApp()"">Launch the TILT App</button>
+    <button onclick="LaunchApp()">Launch the TILT App</button>
+    <button onclick="redirectToPage()">Click me</button>
 </div>
 
 <//CSS button for "More Information": bring to page for past inputs from current database>
