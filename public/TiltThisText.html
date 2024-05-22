@@ -14,8 +14,12 @@
     }
     .container {
     width: 90%;
-    border-radius: 15px;
-    border: 5px solid black;
+    border-radius: 20px;
+    border: 3px solid rgb(187, 187, 187);
+    background-color: rgb(253, 244, 255);
+    display: flex;       
+    justify-content: center;
+    align-items: center;
     }
     textarea {
     width: 600px;
@@ -38,18 +42,18 @@
     <header>
         <h1>Tilt the Balance</h1>
     </header>
-
+    
+    <section>
     <div class="container">
-        <section>
         <article>
-            <p>Enter a chunk of text in the box below</p>
-            <textarea id="userInput" placeholder="Enter text for re-balancing here..."></textarea>
+            <h4>Enter biased text in the box below...</h4>
+            <textarea id="userInput" placeholder="Enter text"></textarea>
         </article>     
         <article>
             <button onclick="processInput()">TILT</button>
         </article>
         <article>
-            <p>For a more equal world</p>    
+            <h4 align="right">...For a more equal world</h4>    
             <textarea id="chatOutput" readonly></textarea>
         </article>       
         </section>  
