@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Flexbox 0 — starting code</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      header {
+        background: purple;
+        height: 100px;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        line-height: 100px;
+        margin: 5px;
+      }
+
+      article {
+        padding: 10px;
+        margin: 10px;
+        background: aqua;
+      }
+
+      /* Add your flexbox CSS below here */
+      section {
+        display: flex;
+        align-items: center;
+      }     
+  
+  
+  
+  </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Tilt the Balance</h1>
+    </header>
+
+    <section>
+      <article>
+        <h4>Enter a chunk of text in the box below</h4>
+        <textarea id="userInput" placeholder="Enter text for re-balancing here..."></textarea>
+      </article>
+
+      <article>
+        <button onclick="processInput()">TILT</button>
+    </article>
+
+      <article>
+        <p>For a more equal world</p>    
+        <textarea id="chatOutput" readonly></textarea>
+    </article>   
+
+    </section>
+  </body>
+</html>

@@ -1,30 +1,6 @@
 h1 {
-    color:#b900c0; text-align: center; font-family:Arial, Helvetica, sans-serif;}
-
-
-.container {
-    width: 80%;
-    margin: 50px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-textarea {
-    width: 100%;
-    height: 150px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #84c0ff;
+    text-align: center;
     color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #b900c0;
-}
+    line-height: 100px;
+    margin: 5px;
+  }

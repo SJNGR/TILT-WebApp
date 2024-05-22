@@ -4,14 +4,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tilt This Text</title>
     <link rel="stylesheet" href="../style.css">
+    <script src="script.js"></script>
+    
+    <style> 
+    section {
+        display: flex;       
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+    width: 90%;
+    border-radius: 15px;
+    border: 5px solid black;
+    }
+    textarea {
+    width: 600px;
+    height: 450px;
+    margin-bottom: 10px;
+    }
+    button {
+    padding: 10px 20px;
+    background-color: #84c0ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    }
+    button:hover {
+    background-color: #b900c0;
+    }
+</style>
 </head>
 <body>
-    <h1>Tilt the Balance</h1> 
+    <header>
+        <h1>Tilt the Balance</h1>
+    </header>
+
     <div class="container">
-        <textarea id="userInput" placeholder="Enter text for re-balancing here..."></textarea>
-        <button onclick="processInput()">TILT</button>
-        <textarea id="chatOutput" readonly></textarea>
+        <section>
+        <article>
+            <p>Enter a chunk of text in the box below</p>
+            <textarea id="userInput" placeholder="Enter text for re-balancing here..."></textarea>
+        </article>     
+        <article>
+            <button onclick="processInput()">TILT</button>
+        </article>
+        <article>
+            <p>For a more equal world</p>    
+            <textarea id="chatOutput" readonly></textarea>
+        </article>       
+        </section>  
+
     </div>
-    <script src="script.js"></script>
+
+    <br>
+    <//homepage link>
+    <a href="../index.html">Home</a>
 </body>
 </html>
