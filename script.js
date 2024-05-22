@@ -23,10 +23,11 @@ async function processInput() {
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({ userInput })
         });
-
         const data = await response.json();
+        
+        // Assuming data contains the AI response in the 'choices' array
         const message = data.choices[0].message.content;
-         responseElement.innerHTML = "Loading...";
+        responseElement.innerHTML = message;
     } 
     
     catch (error) {
