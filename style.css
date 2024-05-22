@@ -29,3 +29,14 @@ article {
 #chatOutput {
     border-radius: 10px;
 }
+button {
+    padding: 10px 20px;
+    background-color: #84c0ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    }
+    button:hover {
+    background-color: #b900c0;
+
+    }

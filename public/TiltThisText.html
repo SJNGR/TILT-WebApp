@@ -15,7 +15,7 @@
     .container {
     width: 90%;
     border-radius: 20px;
-    border: 3px solid rgb(187, 187, 187);
+    border: 3px solid rgb(212, 197, 210);
     background-color: rgb(253, 244, 255);
     display: flex;       
     justify-content: center;
@@ -26,14 +26,16 @@
     height: 450px;
     margin-bottom: 10px;
     }
-    button {
+    #TILTbutton {
     padding: 10px 20px;
     background-color: #84c0ff;
     color: white;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: x-large;
     }
-    button:hover {
+    #TILTbutton:hover {
     background-color: #b900c0;
     font-style: italic;
     }
@@ -51,7 +53,7 @@
             <textarea id="userInput" placeholder="Enter text"></textarea>
         </article>     
         <article>
-            <button onclick="processInput()">TILT</button>
+            <button id="TILTbutton" onclick="processInput()">TILT</button>
         </article>
         <article>
             <h4 align="right">...For a more equal world</h4>    
