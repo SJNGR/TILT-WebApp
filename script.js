@@ -12,8 +12,8 @@ function PageMoreInfo() {
 
 async function processInput() {
     const userInput = document.getElementById("userInput").value;
-    const responseElement = document.getElementById("chatOutput");
-   
+    const responseElement = document.getElementById("response");
+    responseElement.innerHTML = "Loading...";
 
 // Send a POST request to the local server 
     try {
