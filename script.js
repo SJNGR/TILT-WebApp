@@ -9,19 +9,19 @@ function PageMoreInfo() {
     // Redirect to a different page
     window.location.href="public/MoreInfo.html";
 }
+
 async function sendMessage() {
     const userInput = document.getElementById("userInput").value;
     const responseElement = document.getElementById("response");
     responseElement.innerHTML = "Loading...";
 
+// Send a POST request to the local server 
     try {
-        // Send a POST request to the local server.js 
-        const response = await fetch('http://localhost:3000/api/chatgpt', {
+        const response = await fetch('http://localhost:3000/api/chatgpt', 
+        {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json"},
-                
-                body: JSON.stringify({ userInput })
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({ userInput })
         });
 
         const data = await response.json();
