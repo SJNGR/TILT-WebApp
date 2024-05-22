@@ -12,7 +12,7 @@ function PageMoreInfo() {
 
 async function processInput() {
     const userInput = document.getElementById("userInput").value;
-    const responseElement = document.getElementById("response");
+    const responseElement = document.getElementById("chatOutput");
    
 
 // Send a POST request to the local server 
