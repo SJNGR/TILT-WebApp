@@ -11,17 +11,17 @@ function PageMoreInfo() {
 }
 async function sendMessage() {
     const userInput = document.getElementById("userInput").value;
-    
     const responseElement = document.getElementById("response");
     responseElement.innerHTML = "Loading...";
 
     try {
+        // Send a POST request to the local server.js 
         const response = await fetch('http://localhost:3000/api/chatgpt', {
-            method: 'POST',
+            method: "POST",
             headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ userInput })
+                "Content-Type": "application/json"},
+                
+                body: JSON.stringify({ userInput })
         });
 
         const data = await response.json();
