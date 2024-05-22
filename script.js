@@ -10,10 +10,10 @@ function PageMoreInfo() {
     window.location.href="public/MoreInfo.html";
 }
 
-async function sendMessage() {
+async function processInput() {
     const userInput = document.getElementById("userInput").value;
     const responseElement = document.getElementById("response");
-    responseElement.innerHTML = "Loading...";
+   
 
 // Send a POST request to the local server 
     try {
@@ -26,8 +26,10 @@ async function sendMessage() {
 
         const data = await response.json();
         const message = data.choices[0].message.content;
-        responseElement.innerHTML = message;
-    } catch (error) {
+         responseElement.innerHTML = "Loading...";
+    } 
+    
+    catch (error) {
         console.error('Error:', error);
         responseElement.innerHTML = 'An error occurred. Please try again.';
     }
