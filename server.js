@@ -1,3 +1,4 @@
+const OpenAI = require('openai')
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
@@ -16,7 +17,7 @@ app.set('views', '.')
 app.set('view engine', 'ejs');
 
 // Needed for public directory
-app.use(express.static(__dirname + '/public'));
+app.use("/public", express.static(__dirname + '/public'));
 
 // Needed for parsing form data
 app.use(express.json());      
@@ -42,19 +43,22 @@ app.post('/api/chatgpt', async (req, res) => {
     const fixedPrefix = "Edit the following text from masculine default language to gender neutral language, with as few word changes as possible: ";
     const prompt = fixedPrefix + userInput;
 
-    try {
-        const response = await axios.post('https://api.openai.com/v1/chat/completions', {
-            model: "gpt-4",
-            messages: [{"role": "user", "content": prompt}]
-        }, {
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
-            }
-        });
-        const data = await response.json();
-        
-        res.json(response.data);
+
+
+    
+    
+
+    const openai = new OpenAI();
+try {
+    const completion = await openai.chat.completions.create({
+      messages: [{ role: "system", content: prompt }],
+      model: "gpt-3.5-turbo",
+    });
+  
+    console.log(completion.choices[0].message.content);
+       
+        res.json(completion.choices[0].message.content);
+
     } catch (error) {
         console.error(error);
         res.status(500).send('An error occurred');

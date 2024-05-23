@@ -6,7 +6,7 @@ async function processInput() {
 
 // Send a POST request to the local server 
     try {
-        const response = await fetch('http://localhost:3000/api/chatgpt', 
+        const response = await fetch('/api/chatgpt', 
         {
             method: "POST",
             headers: {"Content-Type": "application/json"},
@@ -14,9 +14,8 @@ async function processInput() {
         });
         const data = await response.json();
         
-        // Recieve response. Assuming response contains the AI response in the 'choices' array with only one choice, value should be 0
-        const message = data.choices[0].message.content;
-        responseElement.innerHTML = message;
+
+        responseElement.innerHTML = data;
     } 
     
     catch (error) {
