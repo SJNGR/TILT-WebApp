@@ -1,10 +1,3 @@
-// root page
-app.get('/', function(req, res) {
-    res.render('index');
- });
-
-
-
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
@@ -16,6 +9,34 @@ const port = 3000;
 app.use(cors());
 app.use(express.json());
 
+// Setting where the location of your EJS files are
+app.set('views', '.')
+
+// Needed for EJS
+app.set('view engine', 'ejs');
+
+// Needed for public directory
+app.use(express.static(__dirname + '/public'));
+
+// Needed for parsing form data
+app.use(express.json());      
+app.use(express.urlencoded({extended: true}));
+
+// root page
+app.get('/', function(req, res) {
+    res.render('index');
+ });
+
+ // Tilt App page
+app.get('/TiltThisText', function(req, res) {
+    res.render('TiltThisText');
+ });
+
+// More Info page
+app.get('/MoreInfo', function(req, res) {
+    res.render('MoreInfo');
+ });
+ 
 app.post('/api/chatgpt', async (req, res) => {
     const { userInput } = req.body;
     const fixedPrefix = "Edit the following text from masculine default language to gender neutral language, with as few word changes as possible: ";
