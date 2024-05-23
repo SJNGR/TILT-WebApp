@@ -31,7 +31,8 @@ app.post('/api/chatgpt', async (req, res) => {
                 'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
             }
         });
-
+        const data = await response.json();
+        
         res.json(response.data);
     } catch (error) {
         console.error(error);
