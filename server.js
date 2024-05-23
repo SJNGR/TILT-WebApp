@@ -28,12 +28,12 @@ app.get('/', function(req, res) {
  });
 
  // Tilt App page
-app.get('/TiltThisText', function(req, res) {
+app.get('./TiltThisText', function(req, res) {
     res.render('TiltThisText');
  });
 
 // More Info page
-app.get('/MoreInfo', function(req, res) {
+app.get('./MoreInfo', function(req, res) {
     res.render('MoreInfo');
  });
  

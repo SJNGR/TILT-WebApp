@@ -2,12 +2,12 @@ function LaunchApp() {
     // Launch alert message
     alert("Get ready to tilt the balance!");
     // Redirect to a different page
-    window.location.href="/TiltThisText.ejs";
+    window.location.href="./TiltThisText.ejs";
   } 
 
 function PageMoreInfo() {
     // Redirect to a different page
-    window.location.href="/MoreInfo.ejs";
+    window.location.href="./MoreInfo.ejs";
 }
 
 async function processInput() {
