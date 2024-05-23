@@ -25,7 +25,7 @@ async function processInput() {
         });
         const data = await response.json();
         
-        // Assuming response contains the AI response in the 'choices' array with only one choice, value should be 0
+        // Recieve response. Assuming response contains the AI response in the 'choices' array with only one choice, value should be 0
         const message = data.choices[0].message.content;
         responseElement.innerHTML = message;
     } 

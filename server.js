@@ -1,3 +1,10 @@
+// root page
+app.get('/', function(req, res) {
+    res.render('index');
+ });
+
+
+
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
