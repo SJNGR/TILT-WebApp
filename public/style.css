@@ -1,12 +1,15 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
-background-image: url("Cosmos.png");
+background-image: url("cosmosLS.png");
 background-size: cover;
     }
 
-body {
-}
-
+/*link styles no underline*/
+    a:link {text-decoration: none;} 
+    a:visited {text-decoration: none;} 
+    a:hover {text-decoration: none;} 
+    a:active {text-decoration: none;}
+      
 h1 {
     text-align: center;
     color: rgb(255, 255, 255);
@@ -21,24 +24,31 @@ article {
     margin: 10px;
     }
 
+/*main portion style*/
 .mainportion 
     {background-color: rgb(247, 243, 255); border: 5px #6e1292 solid; border-radius: 15px;  padding: 10px}
 
-#userInput {
-    
-}
 
-#chatOutput {
-
-}
-button {
+/*normal button styling*/
+button{
     padding: 10px 20px;
-    background-color: #c6a0d4;
+    background-color: #e6c0f3;
     color: rgb(59, 0, 99);
     border: none;
     cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     }
 button:hover {
-    background-color: #b900c0;
-    color: rgb(255, 255, 255);
+    background-color: #a54ca8;
+    color: white
     }
+
+/*interactive text box*/
+#userInput {font-family:'Courier New', Courier, monospace}
+#chatOutput {font-family:Arial, Helvetica, sans-serif}
+    
