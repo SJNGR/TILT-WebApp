@@ -32,7 +32,10 @@ app.get('/', function(req, res) {
 app.get('/TiltThisText', function(req, res) {
     res.render('TiltThisText');
  });
-
+ // Tilt App Mobile page
+ app.get('/TiltThisTextMobile', function(req, res) {
+    res.render('TiltThisTextMobile');
+ });
 // More Info page
 app.get('/MoreInfo', function(req, res) {
     res.render('MoreInfo');
