@@ -14,12 +14,16 @@
     }
     .container {
     width: 95%;
-    border-radius: 20px;
-    border: 3px solid rgb(212, 197, 210);
-    background-color: rgb(253, 244, 255);
+    border-radius: 0px;
+    border: px solid rgb(212, 197, 210);
+    background-color: none;
     display: flex;       
     justify-content: center;
     align-items: center;
+    }
+    article {
+    padding: 10px;
+    margin: 0px;
     }
     textarea {
     width: 600px;
@@ -31,7 +35,7 @@
     }
     #TILTbutton {
     padding: 10px 20px;
-    background-color: #84c0ff;
+    background-color: #3a82cf;
     color: white;
     border: none;
     border-radius: 8px;
@@ -54,26 +58,34 @@
     <section>
     <div class="container">
         <article>
-            <h4 align="right" style="margin: 10px;">Enter biased text in the box below...</h4>
-            <textarea input type="text" id="userInput" placeholder="Enter text"></textarea>
+            <h4 align="right" style="margin: 10px; color: azure;">Enter biased text in the box below and click TILT...</h4>
+            <textarea input type="text" id="userInput" placeholder="Input Text"></textarea>
         </article>     
         <article>
             <button id="TILTbutton" onclick="processInput()">TILT</button>
         </article>
         <article>
-            <h4 align="left" style="margin: 10px;">...For a more equal world</h4>    
+            <h4 align="left" style="margin: 10px; color: azure;">...For a more equal world</h4>    
             <textarea id="response" readonly></textarea>
         </article>       
         </section>  
-
     </div>
-
-    <br>
 
     <button>
     <a href="/">Home</a></button>
     <button>
     <a href="/MoreInfo">More Info</a></button>
+
+    <div class="mainportion">
+        <h5 style="margin: 10px">Try it out! Copy and paste the text below into the Input Text box:</h5>
+        <p>"Man is his own star; and the soul that can <br>
+            Render an honest and a perfect man, <br>
+            Commands all light, all influence, all fate;<br>
+            Nothing to him falls early or too late.<br>
+            Our acts our angels are, or good or ill,<br>
+            Our fatal shadows that walk by us still."<br><i>(Epilogue to Beaumont and Fletcher's Honest Man's Fortune, 1613)</i></p>
+               
+    </div>
 
 </body>
 </html>

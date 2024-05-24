@@ -13,20 +13,15 @@ background-size: cover;
 h1 {
     text-align: center;
     color: rgb(255, 255, 255);
-    line-height: 80px;
+    line-height: 60px;
     margin: 5px;
     }
 
 p {color: #640068; margin: 10px}
 
-article {
-    padding: 10px;
-    margin: 10px;
-    }
-
 /*main portion style*/
 .mainportion 
-    {background-color: rgb(247, 243, 255); border: 5px #6e1292 solid; border-radius: 15px;  padding: 10px}
+    {background-color: rgb(247, 243, 255); border: 3px #6e1292 solid; border-radius: 15px;  padding: 10px}
 
 
 /*normal button styling*/
