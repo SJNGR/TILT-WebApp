@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tilt This Text</title>
+    <title>Tilt This Text Mobile</title>
     <link rel="stylesheet" href="./public/style.css">
     <script src="public/script.js" type="text/javascript"></script>
     
@@ -26,13 +26,7 @@
     padding: 10px;
     margin: 0px;
     }
-    #textareamobile {
-    width: 350px;
-    height: 200px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(76, 3, 107, 0.589);
-    border-radius: 10px;
-    }
+    
     #TILTbutton {
     padding: 10px 20px;
     background-color: #5999df;
@@ -60,14 +54,15 @@
     <div class="container">
         <article>
             <h4 align="left" style="margin: 4px; color: azure; text-shadow: 2px 2px 4px rgba(59, 0, 77, 0.808)">Enter biased text below and click TILT...</h4>
-            <textarea id="textareamobile" input type="text" placeholder="Input Text"></textarea>
+            <textarea id="userInput" input type="text" placeholder="Input Text" 
+            style="width: 350px; height: 200px; padding: 10px; box-shadow: 0 0 10px rgba(76, 3, 107, 0.589); border-radius: 10px;"></textarea>
         </article>     
         <article>
             <button style="margin: 0px" id="TILTbutton" onclick="processInput()">TILT</button>
         </article>
         <article>
             <h4 align="left" style="margin: 4px; color: azure;text-shadow: 2px 2px 4px rgba(59, 0, 77, 0.808)">...For a more equal world</h4>    
-            <textarea id="textareamobile" readonly></textarea>
+            <textarea id="response" readonly style="width: 350px; height: 200px; padding: 10px; box-shadow: 0 0 10px rgba(76, 3, 107, 0.589); border-radius: 10px;" ></textarea>
         </article>       
         </section>  
     </div>
