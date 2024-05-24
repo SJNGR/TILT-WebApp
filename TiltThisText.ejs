@@ -41,6 +41,7 @@
     border-radius: 8px;
     cursor: pointer;
     font-size: x-large;
+    box-shadow: 0 0 10px rgba(76, 3, 107, 0.589);
     }
     #TILTbutton:hover {
     background-color: #b900c0;
@@ -52,20 +53,20 @@
 </head>
 <body>
     <header>
-        <h1>Tilt the Balance</h1>
+        <h1><i>Tilt</i> the Balance</h1>
     </header>
     
     <section>
     <div class="container">
         <article>
-            <h4 align="right" style="margin: 10px; color: azure;">Enter biased text in the box below and click TILT...</h4>
+            <h4 align="right" style="margin: 10px; color: azure; text-shadow: 2px 2px 4px rgba(59, 0, 77, 0.808)">Enter biased text in the box below and click TILT...</h4>
             <textarea input type="text" id="userInput" placeholder="Input Text"></textarea>
         </article>     
         <article>
             <button id="TILTbutton" onclick="processInput()">TILT</button>
         </article>
         <article>
-            <h4 align="left" style="margin: 10px; color: azure;">...For a more equal world</h4>    
+            <h4 align="left" style="margin: 10px; color: azure;text-shadow: 2px 2px 4px rgba(59, 0, 77, 0.808)">...For a more equal world</h4>    
             <textarea id="response" readonly></textarea>
         </article>       
         </section>  
@@ -77,13 +78,24 @@
     <a href="/MoreInfo">More Info</a></button>
 
     <div class="mainportion">
-        <h5 style="margin: 10px">Try it out! Copy and paste the text below into the Input Text box:</h5>
+        <h4 style="margin: 10px; margin-top: 5px;">Try it out! Copy and paste the text below into the Input Text box:</h4>
+        <p>
+            Only in freedom can man grow to his full stature. <br>
+            Only in freedom will he learn to think and move, and give the very best in him. <br>
+            Only in freedom will he realize the true force of the social bonds which knit men together, <br>
+            and which are the true foundation of a normal social life.<br>
+            <i>-Emma Goldman, 1910</i>
+
+
+        </p>    
+    
         <p>Man is his own star; and the soul that can <br>
             Render an honest and a perfect man, <br>
             Commands all light, all influence, all fate;<br>
             Nothing to him falls early or too late.<br>
             Our acts our angels are, or good or ill,<br>
-            Our fatal shadows that walk by us still.<br><i>-Epilogue to Beaumont and Fletcher's Honest Man's Fortune, 1613</i></p>
+            Our fatal shadows that walk by us still.<br>
+            <i>-Epilogue to Beaumont and Fletcher's Honest Man's Fortune, 1613</i></p>
                
     </div>
 
