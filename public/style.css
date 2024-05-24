@@ -3,8 +3,11 @@ html {
 }
 
 body {
-    margin: 5px;
+    margin: 0px;
+    background-image: url("../Assets/Cosmos.png");
+        background-color: #8752c4;
     }
+
 
 header {
     height: 100px;
@@ -16,6 +19,8 @@ h1 {
     line-height: 100px;
     margin: 5px;
     }
+
+p {text-align: center; color: #640068;}
 
 article {
     padding: 10px;
