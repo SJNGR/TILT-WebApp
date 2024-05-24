@@ -3,9 +3,8 @@ html {
 }
 
 body {
-    margin: 0px;
-    background-image: url("../Assets/Cosmos.png");
-        background-color: #8752c4;
+    margin: 5px;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../Assets/Cosmos.png");
     }
 
 header {
