@@ -10,13 +10,8 @@ background-size: cover;
     a:hover {text-decoration: none;} 
     a:active {text-decoration: none;}
       
-h1 {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    line-height: 60px;
-    margin: 5px;
-    }
-
+h1 {text-align: center; color: rgb(255, 255, 255); line-height: 70px; margin: 5px; font-size: 50px;}
+h2 {text-align: center; color: rgb(255, 255, 255);}
 p {color: #640068; margin: 10px}
 
 /*main portion style*/
@@ -38,6 +33,7 @@ button{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
+    font-size: large;
     }
 button:hover {
     background-color: #ba5dbd;
