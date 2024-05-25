@@ -46,11 +46,6 @@ app.post('/api/chatgpt', async (req, res) => {
     const fixedPrefix = "Edit the following text from masculine default language to gender neutral language, with as few word changes as possible: ";
     const prompt = fixedPrefix + userInput;
 
-
-
-    
-    
-
     const openai = new OpenAI();
 try {
     const completion = await openai.chat.completions.create({
