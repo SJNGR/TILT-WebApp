@@ -43,7 +43,7 @@ app.get('/MoreInfo', function(req, res) {
  
 app.post('/api/chatgpt', async (req, res) => {
     const { userInput } = req.body;
-    const fixedPrefix = "Edit the following text from any masculine-default language into gender neutral language with as few word changes as possible. Where meaning is specific to a gender, keep the pronouns as specified. Where no gendered terms are used, do not change the text: ";
+    const fixedPrefix = "Edit instances of masculine-default language in the following text into gender-neutral language with as few word changes as possible; where meaning is specific to a gender, keep the pronouns as specified. Where no gendered terms are used, do not change the text: ";
     const prompt = fixedPrefix + userInput;
 
     const openai = new OpenAI();
