@@ -50,4 +50,12 @@ button:hover {
 /*interactive text box*/
 #userInput {font-family:'Courier New', Courier, monospace}
 #chatOutput {font-family:Arial, Helvetica, sans-serif}
+
+
+/*disclaimer*/
+.disclaimer{
+    font-size: 12px;
     
+    text-align: center;
+    margin: 100px;
+} 

@@ -40,7 +40,12 @@ app.get('/TiltThisText', function(req, res) {
 app.get('/MoreInfo', function(req, res) {
     res.render('MoreInfo');
  });
- 
+
+// Interviews page
+app.get('/Interviews', function(req, res) {
+    res.render('Interviews');
+ });
+
 app.post('/api/chatgpt', async (req, res) => {
     const { userInput } = req.body;
     const fixedPrefix = "Edit instances of masculine-default language in the following text into gender-neutral language with as few word changes as possible; where the terms 'male' and 'female' are specified, keep the pronouns as specified. Where no gendered terms are used, do not change the text: ";
