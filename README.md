@@ -1,2 +1,2 @@
 # TILT-WebApp
-Crowdsourcing Gender Equality Through Language 
+Gender Equality Through Language 
