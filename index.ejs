@@ -38,7 +38,21 @@
     margin: 20px;
     box-shadow: 0 0 10px #524058b9;
     }
-  </style>
+    .responsive {
+    max-width: 89%;
+    height: auto;
+    }
+    .QRpopup span.hover-card {
+      display: none
+    }
+    .QRpopup:hover span.hover-card {
+      display: flex;
+      position: absolute;
+    }
+    .QRpopup {
+      position: relative;
+    }
+</style>
 
 </head>
 
@@ -49,10 +63,10 @@
   <section>
     <article>
       <p>In modern life, encountering <b>needlessly gendered terms</b> can be confusing, demoralising, reduce empathy, and create <b>divisive</b> feelings of <b>exclusion or entitlement</b>.</p>
-      <p>The <b>assumed-male defaults</b> of the English language have long been a thorn in the side of the goal towards equality and mutual respect between the sexes, 
+      <p>The <b>assumed-male defaults</b> of the English language have long been a thorn in the side of the goal towards mutual respect between the sexes, 
         and the discriminations of the past have become roadblocks in our collective journey to a truly equal world.</p>
     </article>     
-    <a href="/TiltThisText"><img src="./public/balancerocks.jpg" alt="rocks balanced carefully" width="400" border-radius="15px" ></a>
+    <a href="/TiltThisText"><img src="./public/balancerocks.jpg" alt="rocks balanced carefully" width="400" class="responsive"></a>
     <article>
       <p><b>Large Language Model (LLM) Artificial Intelligence</b> processing can help humanity achieve closure on the inadvertant infractions of <b>past writers</b> while keeping their messages intact.</p> 
       <p>This approach can help the new generation of readers to once more uncover the deeper, <b>intended meaning</b> of a long-gone author's texts.</p> 
@@ -64,14 +78,14 @@
   </section>
   <section>
     <button><a href="/TiltThisText">Use TILT (Screens)</a></button>
-    <button><a href="/TiltThisTextMobile">Use TILT (Mobile)</a></button>
+    <button><a href="/TiltThisTextMobile" class="QRpopup">Use TILT (Mobile)<span class="hover-card"><img src="./public/mobileQR.png" width="300px"></span></a></button>
     <button><a href="/MoreInfo">More Info</a></button>
     <button><a href="/Interviews">Interviews</a></button>
   </section> 
 
   <section>
     <article style="width: 700px;">
-      <p style="text-align: center;">The <b>TILT Web Application</b> is powered by OpenAI's LLM <b>ChatGPT</b> to addresses sexist language in a direct and immediate way, 
+      <p style="text-align: center; font-size: larger;">The <b>TILT Web Application</b> is powered by OpenAI's LLM <b>ChatGPT</b> to addresses sexist language in a direct and immediate way, 
           by re-writing unintentionally sexist writing into the <b>gender-neutral</b> norm that is expected by readers of today.</p>
     </article>
   </section>
