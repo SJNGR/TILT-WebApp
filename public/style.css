@@ -17,19 +17,19 @@ body {
     a:hover {text-decoration: none;} 
     a:active {text-decoration: none; color: azure;}
       
-h1 {text-align: center; color: rgb(255, 255, 255); line-height: 70px; margin: 5px; font-size: 50px; text-shadow: 2px 2px 4px rgba(59, 0, 77, 0.808);}
-h2 {text-align: center; color: rgb(255, 255, 255); text-shadow: 2px 2px 4px rgba(59, 0, 77, 0.808)}
+h1 {text-align: center; color: rgb(255, 255, 255); line-height: 70px; margin: 5px; font-size: 50px; text-shadow: 2px 2px 4px rgba(59, 0, 77, 0.89);}
+h2 {text-align: center; color: rgb(255, 255, 255); text-shadow: 2px 2px 4px rgba(59, 0, 77, 0.89)}
 p {color: #640068; margin: 10px}
 
 /*main portion style*/
 .mainportion 
-    {background-color: rgba(247, 243, 255, 0.685); border: 3px #6e1292 solid; border-radius: 15px;  padding: 10px}
+    {background-color: rgba(247, 243, 255, 0.685); border: 0px #6e1292 solid; border-radius: 15px;  padding: 10px}
 
 
 /*normal button styling*/
 button{
     padding: 10px 20px;
-    background-color: #e2ccff;
+    background-color: #a7cdff;
     color: rgb(59, 0, 99);
     border: none;
     cursor: pointer;

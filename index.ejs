@@ -22,6 +22,7 @@
     display: flex;       
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     }
     article {
     background-color: rgba(247, 243, 255, 0.685);
@@ -29,13 +30,13 @@
     margin: 0px;
     padding: 4px;
     box-shadow: 0 0 10px rgba(76, 3, 107, 0.589);
-    border: 2px #6e1292 solid; 
+    border: 0px #6e1292 solid; 
     border-radius: 15px;
-    width: 550px;
+    width: 800px;
     }
     img {
-    border-radius: 35px;
-    margin: 20px;
+    border-radius: 30px;
+    margin: 20px 10px 5px 10px;
     box-shadow: 0 0 10px #524058b9;
     }
     .responsive {
@@ -52,6 +53,12 @@
     .QRpopup {
       position: relative;
     }
+    section#horizontalflex{
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    }
 </style>
 
 </head>
@@ -62,32 +69,26 @@
 
   <section>
     <article>
-      <p>In modern life, encountering <b>needlessly gendered terms</b> can be confusing, demoralising, reduce empathy, and create <b>divisive</b> feelings of <b>exclusion or entitlement</b>.</p>
-      <p>The <b>assumed-male defaults</b> of the English language have long been a thorn in the side of the goal towards mutual respect between the sexes, 
+      <p style="font-size: larger; text-align: center;">In modern life, encountering <b>needlessly gendered terms</b> can be confusing, demoralising, reduce empathy, and create <b>divisive</b> feelings of <b>exclusion or entitlement</b>.</p>
+      <p style="font-size: larger; text-align: center;">The <b>assumed-male defaults</b> of the English language have long been a thorn in the side of the goal towards mutual respect between the sexes, 
         and the discriminations of the past have become roadblocks in our collective journey to a truly equal world.</p>
     </article>     
     <a href="/TiltThisText"><img src="./public/balancerocks.jpg" alt="rocks balanced carefully" width="400" class="responsive"></a>
-    <article>
-      <p><b>Large Language Model (LLM) Artificial Intelligence</b> processing can help humanity achieve closure on the inadvertant infractions of <b>past writers</b> while keeping their messages intact.</p> 
-      <p>This approach can help the new generation of readers to once more uncover the deeper, <b>intended meaning</b> of a long-gone author's texts.</p> 
-    </article> 
+    <h2 style="margin: 5px; font-size:xx-large;">Advancing Equality With AI</h2>
   </section>  
-    
-  <section>
-    <h2 style="margin: 5px;">Advancing Equality With AI</h2>
-  </section>
-  <section>
+  <section id="horizontalflex">
     <button><a href="/TiltThisText">Use TILT (Screens)</a></button>
     <button><a href="/TiltThisTextMobile" class="QRpopup">Use TILT (Mobile)<span class="hover-card"><img src="./public/mobileQR.png" width="300px"></span></a></button>
     <button><a href="/MoreInfo">More Info</a></button>
     <button><a href="/Interviews">Interviews</a></button>
   </section> 
-
   <section>
-    <article style="width: 700px;">
+    <article>
+      <p style="font-size: larger; text-align: center;"><b>Large Language Model (LLM) Artificial Intelligence</b> processing can help humanity achieve closure on the inadvertant infractions of <b>past writers</b> while keeping their messages intact.
+      This approach can help the new generation of readers to once more uncover the deeper, <b>intended meaning</b> of a long-gone author's texts.</p> 
       <p style="text-align: center; font-size: larger;">The <b>TILT Web Application</b> is powered by OpenAI's LLM <b>ChatGPT</b> to addresses sexist language in a direct and immediate way, 
-          by re-writing unintentionally sexist writing into the <b>gender-neutral</b> norm that is expected by readers of today.</p>
-    </article>
+      by re-writing unintentionally sexist writing into the <b>gender-neutral</b> norm that is expected by readers of today.</p>
+      </article> 
   </section>
 
   <p class="disclaimer">
